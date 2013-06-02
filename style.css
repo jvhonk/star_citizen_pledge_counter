@@ -1,9 +1,11 @@
 
 * { margin: 0; padding: 0; }
-	
+
+
+
 #ReloadThis { 
 background: none;
-color: white;
+margin-top: 20px;
     width: 100%;
     height: 100%;
     }
@@ -21,10 +23,7 @@ html, body {
 	
 body {
 background-image: url("/images/Space.jpeg" );
-background-size:100% 100%;
-background-repeat: no-repeat;
-background-position: center;
-height: 100%;
+background-size: 100% 100%;
 text-align: center; 
 }
 
@@ -36,25 +35,48 @@ span {
 #any-height { 
     
     font-family: orbitron;
-
     color:black;
     padding-top: 0px;
-    background: url("/images/brushed.jpg");
-    background-size: cover;
     text-align: middle;
-    width: 500px;
+    width: 450px;
     vertical-align: middle;
     horizontal-align:middle;
     display: inline-block;
-    border: 1px solid brown;	
-    border-radius: 10px;}
-#any-height h2, #any-height h3 {color: #2e488f;}
+    }
+	
+#main h2, #main h3 {color: #2e488f; }
 
-.middle{text-align: left; margin: 0 auto; width:400px; vertical-align: middle;} 
+#main {
+
+display:block;
+background: url("/images/brushed.jpg"); 
+background-size: cover; 
+float:left; 
+position:relative; 
+width:438px; 
+border: 1px solid brown;	
+border-radius: 10px;}
+
+#gap {float:left; width:20px; }
+
+#version{float:left; position: relative; text-align: left; margin-top:5px; padding-left: 10px; font-size: .8em; color: black;}
+
+#expand {float:right; position: relative; padding-left: 15px;}
+#retract {float:right; width:28px; height:28px; position: relative; padding: 0px;}
+
+
+
+#aside {float:right; width:318px; background: url("/images/brushed.jpg"); 
+background-size: cover; border: 1px solid brown; border-radius: 10px;
+ display:block; text-align:left; position:relative; padding-left:25px;}
+#aside h2 {padding-top:15px;}
+
+.middle{text-align: left; margin: 0 auto; width:400px; vertical-align: middle; display:block;} 
 .middle h1 {text-align: middle!important; color:#009900;}
 
-.green {color: #000; padding-top: 20px; padding-left:40px;}
-.black{color: #000; padding-top: 0px;}
+.information {color: #000; padding-top: 20px; padding-left:20px;}
+.black{color: #000; padding-top: 0px; }
+.green {color: #009900; display:inline;}
 
 .time {
     font-family: arial;
@@ -70,11 +92,9 @@ span {
 	
 	
 
-#version {float:right; position: relative; text-align: right; padding-right: 10px; font-size: .8em; color: black;}
-
 h3{padding-top:20px;}
 
-#chart_div {margin: 0, auto; }
+#chart_div {display:block; margin: 0, auto; display:block;}
 
 .timeframe, #settingsTitle a{
      margin-top: 15px;
@@ -108,6 +128,33 @@ h3{padding-top:20px;}
 }
 
 #settingsTitle a{ margin-top: 0px; }
-#closesettingsTitle a, #closesettingsTitle a:visited{float:right; position: relative; text-align: right; padding-right: 10px; color: red;}
-#closesettingsTitle {display:none;}
+#closesettingsTitle a, #closesettingsTitle a:visited{float:right; position: relative; text-align: right; padding-right: 10px; margin-top:5px; color: red;}
+#closesettingsTitle {display:none; width: 100%;}
 #settings {display:none; padding-top: 10px; width: 100%; background-color:rgba(37,82,122,0.5); border-radius: 10px;}
+
+
+fieldset {padding:20px; padding-bottom:0px; border:none;}
+
+label {
+  float:left;
+  width25%;
+  margin-right:0.5em;
+  padding-top:0.2em;
+  text-align:right;
+  font-weight:bold;
+  }
+select {
+  float:right;
+  width:35%;
+  margin-right:0.5em;
+  padding-top:0.2em;
+  text-align:right;
+  }
+
+.timeframe {clear:both;}  
+
+footer {
+   clear: both;
+   color:fff;
+background:none;   
+}
