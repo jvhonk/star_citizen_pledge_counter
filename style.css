@@ -22,7 +22,8 @@ html, body {
     text-align: center; }
 	
 body {
-background-image: url("/images/Space.jpeg" );
+
+background: url(images/Space.jpeg) repeat top fixed;
 background-size: 100% 100%;
 text-align: center; 
 }
@@ -66,7 +67,7 @@ border-radius: 10px;}
 
 
 
-#aside {float:right; width:318px; background: url("/images/brushed.jpg"); 
+#aside {float:right; width:318px; background: url("/images/brushed.jpg");
 background-size: cover; border: 1px solid brown; border-radius: 10px;
  display:block; text-align:left; position:relative; padding-left:25px;}
 #aside h2 {padding-top:15px;}
@@ -133,22 +134,22 @@ h3{padding-top:20px;}
 #settings {display:none; padding-top: 10px; width: 100%; background-color:rgba(37,82,122,0.5); border-radius: 10px;}
 
 
-fieldset {padding:20px; padding-bottom:0px; border:none;}
+fieldset {padding:20px; padding-right:0px; padding-bottom:0px; border:none;}
 
 label {
   float:left;
-  width25%;
-  margin-right:0.5em;
+  width: 180px;
+  margin-right:0.4em;
   padding-top:0.2em;
-  text-align:right;
+  text-align:left;
   font-weight:bold;
   }
 select {
   float:right;
-  width:35%;
+  width:150px;
   margin-right:0.5em;
   padding-top:0.2em;
-  text-align:right;
+  text-align:center;
   }
 
 .timeframe {clear:both;}  
